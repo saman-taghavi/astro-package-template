@@ -1,0 +1,28 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"cSpell.words": ["Astro"],
+	"prettier.documentSelectors": ["**/*.astro"],
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#f2f2f2",
+		"activityBar.background": "#f2f2f2",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"activityBarBadge.background": "#d78787",
+		"activityBarBadge.foreground": "#15202b",
+		"commandCenter.border": "#15202b99",
+		"sash.hoverBorder": "#f2f2f2",
+		"statusBar.background": "#d9d9d9",
+		"statusBar.foreground": "#15202b",
+		"statusBarItem.hoverBackground": "#bfbfbf",
+		"statusBarItem.remoteBackground": "#d9d9d9",
+		"statusBarItem.remoteForeground": "#15202b",
+		"titleBar.activeBackground": "#d9d9d9",
+		"titleBar.activeForeground": "#15202b",
+		"titleBar.inactiveBackground": "#d9d9d999",
+		"titleBar.inactiveForeground": "#15202b99"
+	},
+	"peacock.color": "#D9D9D9"
+}

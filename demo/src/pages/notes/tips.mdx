@@ -1,0 +1,28 @@
+---
+layout: "@/layouts/default/index.astro"
+title: "about Markdowns in Astro"
+---
+
+<div class="flex gap-2 flex-col pb-2">
+	<h1 class="font-Estedad text-3xl">Notes:</h1>
+	<div>
+  <p>import shouldn't be the same as the .astro component</p>
+	</div>
+</div>
+
+<p class="font-bold text-xl"> for Login.astro we can't have the following</p>
+<div class="w-full"> 
+
+```astro title="Login.astro" {2,7}
+---
+import Login from "@/components/Login"
+{/* 🧹 👆 this will show a TS Error */}
+---
+
+<Layout>
+	<Login />
+</Layout>
+
+```
+</div>
+

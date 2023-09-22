@@ -1,0 +1,6 @@
+.next
+dist
+node_modules/
+*env.d.ts
+out
+**/i18n

@@ -1,0 +1,35 @@
+---
+layout: "@/layouts/default/index.astro"
+title: "about Markdowns in Astro"
+draft: true
+---
+export const  pClass = "p-2 text-xl font-Estedad-EN font-bold"
+
+<p class={pClass}> A simple MarkDown example </p>
+
+```js title="astro.config.mjs" ins={5, 8}
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  markdown: {
+    drafts: true,
+  },
+  integrations: [mdx({
+    drafts: true,
+  })],
+});
+```
+
+
+<p class={pClass}> Markdown example </p>
+<p class="p-2 font-medium font-Estedad-EN"> The following code block will be highlighted as JavaScript, wrapped in a code editor frame with the file name <span class="font-bold">"example
+ js"</span>,and the line range <span class="font-bold">2-4</span> will be marked:</p>
+
+```js title="example.js" {2-4}
+// Example function
+function add(a, b) {
+  return a + b
+}
+
+console.log(add(1, 2))
+```

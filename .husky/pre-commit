@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd src
+if [ -x "$(command -v pnpm)" ]; then
+    pnpm pre-commit
+    exit
+fi
+if [ -x "$(command -v yarn)" ]; then
+    yarn pre-commit
+    exit
+fi
+if [ -x "$(command -v npm)" ]; then
+    npm run pre-commit
+    exit
+fi
+echo $"\n install yarn, pnpm or npm \b"
+exit 1

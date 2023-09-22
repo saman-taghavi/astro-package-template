@@ -1,0 +1,4 @@
+# This extension would normally receive Perl syntax highlighting
+# but if we also use Prolog, we may want to override highlighting for
+# files with this extension:
+*.astro gitlab-language=html

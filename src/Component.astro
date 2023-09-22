@@ -1,0 +1,10 @@
+---
+// Write your component code in this file!
+type Props = {
+	message: string
+}
+
+const { message } = Astro.props
+---
+
+<div class={("bg-blue-600", Astro.props.class)}>Hello {message}! {Astro.props.class}</div>
